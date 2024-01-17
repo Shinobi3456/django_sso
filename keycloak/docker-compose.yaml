@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  keycloak:
+    image: sleighzy/keycloak:16.1.0-arm64
+    environment:
+      KEYCLOAK_USER: admin_key
+      KEYCLOAK_PASSWORD: admin_key
+    ports:
+      - "8080:8080"
